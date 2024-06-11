@@ -23,18 +23,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     
 
+  
+
+    
+
+    
+
     <script>
     window._sp_queue = [];
     window._sp_ = {
         config: {
-            accountId: 1772,
-            baseEndpoint: 'https://cdn.privacy-mgmt.com',
-            propertyId: 36108,
+            accountId: 22,
+            baseEndpoint: "https://cdn.sp-stage.net", 
+            env: "stage",
+            preferences: { id: "gabe@sourcepoint.com" },
+          
+
+
             
             
             
             
-            gdpr: { },
             events: {
                 onMessageChoiceSelect: function() {
                     console.log('[event] onMessageChoiceSelect', arguments);
@@ -289,7 +298,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         ><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a
       >
         <div>
-            <button id="gdpr_link" onclick="window._sp_.loadPrivacyManagerModal(1033571)">Edit privacy setting</button>
+            <button onclick="window._sp_.preferences.loadPreferenceCenter('28421', 'gabe@sourcepoint.com')">Edit preferences setting</button>
          </div>
       <p>
         Powered by
